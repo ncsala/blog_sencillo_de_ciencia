@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafé</title>
+    <meta name="description" content="Science blog website">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre without-margin txt-center"><span class="logo__bold">The Science</span>Blog</h1>
+                </a>
+
+                <nav class="navigation">
+                    <a href="aboutus.html" class="navigation_link">About</a>
+                    <a href="contact.html" class="navigation_link">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="txt_header">
+            <h2 class="without-margin">Everything you need to know about science</h2>
+            <p class="without-margin">Stay on top of all the science news</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h3 class="txt-center">Contact</h3>
+
+        <div class="contact-background"></div>
+
+        <form class="form-contact shadow degradee">
+            <div class="field">
+                <label class="field_label" for="name">Name</label>
+                <input 
+                    class="field_field"
+                    type="text" 
+                    placeholder="Your Name" 
+                    id="name"
+                >
+            </div>
+
+            <div class="field">
+                <label class="field_label" for="email">E-mail</label>
+                <input 
+                    class="field_field"
+                    type="email" 
+                    placeholder="Your E-mail" 
+                    id="email"
+                >
+            </div>
+
+            <div class="field">
+                <label class="field_label" for="message">Message</label>
+                <textarea 
+                    class="field_field field_field--textarea"
+                    placeholder="Write your message here" 
+                    id="message"
+                ></textarea>
+            </div>
+
+            <div class="field">
+                <input type="submit" value="Send" class="button button--primary">
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre without-margin txt-center"><span class="logo__bold">The Science</span>Blog</h1>
+                </a>
+
+                <nav class="navigation">
+                    <a href="aboutus.html" class="navigation_link">About</a>
+                    <a href="contact.html" class="navigation_link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>

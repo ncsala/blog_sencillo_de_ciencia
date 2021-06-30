@@ -1,0 +1,248 @@
+:root {
+    --fontHeading: 'PT Sans', sans-serif;
+    --fontParagraph: 'Open Sans', sans-serif;
+
+    --primary: #784D3C;
+    --grey: #e1e1e1;
+    --white: #ffffff;
+    --black: #000000;
+
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --grisclaro: #dfe9f3;
+    --rojo: #d83863;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fontParagraph);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** global ---------------------------------------------------------------------------------------------------------------------**/
+.container { /*cambiado*/
+    width: min(90%, 120rem); /*cuando es movil aplica el 90% , cuando es grande aplica 120rem, siempre aplica el q ocupa menos espacio*/
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fontHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    color: var(--secundario);
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+/*para hacer las imagenes responsivas*/
+img {
+    max-width: 100%;
+}
+.without-margin { /*cambiado*/
+    margin: 0;
+}
+.without-padding { /*cambiado*/
+    padding: 0;
+}
+.txt-center { /*cambiado*/
+    text-align: center;
+}
+
+.img-center{
+    display: flex;
+    justify-content: center;
+}
+/** ----------------------------------------------------------------------------------------------------------**/
+
+
+/** Header **/
+.header {
+    background-image: url(../images/principal.jpg);
+}
+
+.header {
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.txt_header {
+   text-align: center;
+   color: var(--white);
+   margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .txt_header {
+        margin-top: 15rem;
+    }
+}
+.barra {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo {
+    color: var(--white);
+    
+}
+.logo__nombre {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;
+        gap: 3rem;
+    }
+}
+.navigation_link {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primario);
+}
+/*-------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entry {
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 2rem;
+}
+
+/*last-of-type me toma el ultimo elemento del blog y le aplico propiedades  */
+.entry:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.button {
+    display: block;
+    font-family: var(--fontHeading);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+
+    }
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button--primary {
+    background-color: var(--black);
+}
+
+/*preciso boton secundario?
+.button--secondary {
+    background-color: var(--primary);
+}*/
+
+.footer {
+    background-color: var(--black);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+
+/*cambiadas*/
+/**------------------- About US -------------------------------------------------------------------------**/
+@media (min-width: 768px) {
+    .about-us {
+        display: grid;
+        /*le digo q quiero dos columnas al 50%*/
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 2rem;
+    }
+}   
+/**--------------------- -------------------------------------------------------------------------**/
+
+
+/*cambiadas*/
+/**----------------form contact ----------------------------------------------------------**/
+.contact-background {
+    background-image: url(../images/contact.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-contact {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.field_label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.field_field {
+    flex: 1;
+    border: 3px solid var(--grey);
+}
+.field_field--textarea {
+    height: 20rem;
+}
+
+.shadow {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.71);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.71);
+  }
+
+.degradee {
+    font-family: "Krub", sans-serif; /*tipo de letra de google*/
+    /*para poner un degrade en el fondo de la pagina de q color a q color queremos q vaya*/
+    background-image: linear-gradient(to bottom, var(--white) 0%, var(--grey) 100%);
+  }
+/**--------------------- -------------------------------------------------------------------------**/

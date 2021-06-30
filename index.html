@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafé</title>
+    <meta name="description" content="Science blog website">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre without-margin txt-center"><span class="logo__bold">The Science</span>Blog</h1>
+                </a>
+
+                <nav class="navigation">
+                    <a href="aboutus.html" class="navigation_link">About</a>
+                    <a href="contact.html" class="navigation_link">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="txt_header">
+            <h2 class="without-margin">Everything you need to know about science</h2>
+            <p class="without-margin">Stay on top of all the science news</p>
+        </div>  
+    </header>
+
+    <div class="container main-content">
+
+        <main>
+            <h3>Blog posts</h3>
+
+            <article class="entry">
+                <div class="entry_img">
+                    <img src="images/brain1.jpg" alt="Blog image, brain"> 
+                </div>
+                <div class="entry__contenido">
+                    <h4 class="without-margin">Ten myths about the brain</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat pretium turpis et luctus. 
+                        Maecenas ac tincidunt purus, ac cursus elit. Praesent efficitur faucibus erat nec porta. Nam scelerisque 
+                        velit ex, vitae efficitur leo ullamcorper quis. </p>
+                    <a href="entry1.html" class="button button--primary">Read More</a>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="entry_img">
+                    <img src="images/space2.jpg" alt="Blog image, black hole"> 
+                </div>
+
+                <div class="entry__contenido">
+                    <h4 class="without-margin">Is it possible to extract energy from black holes?</h4>
+                    <p>Ut eu blandit massa. Morbi in bibendum sapien, a sodales ex. Pellentesque habitant morbi tristique senectus
+                         et netus et malesuada fames ac turpis egestas. Quisque urna elit, aliquet nec auctor at, hendrerit sit amet est. </p>
+                    <a href="entry2.html" class="button button--primary">Read More</a>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="entry_img">
+                    <img src="images/turtle3.jpg" alt="Blog image, turtle"> 
+                </div>
+
+                <div class="entry__contenido">
+                    <h4 class="without-margin">They discover a Galapagos tortoise believed to be extinct 112 years ago</h4>
+                    <p>Nunc porta elit id condimentum bibendum. Nunc at leo vestibulum quam tincidunt scelerisque luctus nec turpis.
+                         Etiam nulla lacus, sollicitudin vel quam vel, consectetur congue mi. Etiam ullamcorper imperdiet mauris, vitae 
+                         tincidunt justo pulvinar sit amet.</p>
+                    <a href="entry3.html" class="button button--primary">Read More</a>
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Comments</h3>
+            <div id="disqus_thread"></div>
+                <script>
+                (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://mipaginaparaholberton.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a>
+            </noscript>
+
+           
+        </aside>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre without-margin txt-center"><span class="logo__bold">The Science</span>Blog</h1>
+                </a>
+
+                <nav class="navigation">
+                    <a href="aboutus.html" class="navigation_link">About</a>
+                    <a href="contact.html" class="navigation_link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+  
+</body>
+
+</html>
