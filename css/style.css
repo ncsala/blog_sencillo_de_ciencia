@@ -26,7 +26,7 @@ body {
 }
 
 /** global ---------------------------------------------------------------------------------------------------------------------**/
-.container { /*cambiado*/
+.container { 
     width: min(90%, 120rem); /*cuando es movil aplica el 90% , cuando es grande aplica 120rem, siempre aplica el q ocupa menos espacio*/
     margin: 0 auto;
 }
@@ -54,13 +54,13 @@ h4 {
 img {
     max-width: 100%;
 }
-.without-margin { /*cambiado*/
+.without-margin { 
     margin: 0;
 }
-.without-padding { /*cambiado*/
+.without-padding { 
     padding: 0;
 }
-.txt-center { /*cambiado*/
+.txt-center { 
     text-align: center;
 }
 
@@ -173,19 +173,12 @@ img {
     background-color: var(--black);
 }
 
-/*preciso boton secundario?
-.button--secondary {
-    background-color: var(--primary);
-}*/
-
 .footer {
     background-color: var(--black);
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
 
-
-/*cambiadas*/
 /**------------------- About US -------------------------------------------------------------------------**/
 @media (min-width: 768px) {
     .about-us {
@@ -197,8 +190,6 @@ img {
 }   
 /**--------------------- -------------------------------------------------------------------------**/
 
-
-/*cambiadas*/
 /**----------------form contact ----------------------------------------------------------**/
 .contact-background {
     background-image: url(../images/contact.jpg);
@@ -241,8 +232,7 @@ img {
   }
 
 .degradee {
-    font-family: "Krub", sans-serif; /*tipo de letra de google*/
-    /*para poner un degrade en el fondo de la pagina de q color a q color queremos q vaya*/
+    font-family: "Krub", sans-serif; 
     background-image: linear-gradient(to bottom, var(--white) 0%, var(--grey) 100%);
   }
 /**--------------------- -------------------------------------------------------------------------**/
